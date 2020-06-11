@@ -23,3 +23,8 @@ If you have Stylus installed, it'll prompt you to add the userstyle.
 #### Darker Firecracker
 ![f1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerFirecracker1.jpg)
 
+#### Darker Amboss
+
+![a1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss1.png)
+![a2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss2.jpg)
+![a3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss4.jpg)
