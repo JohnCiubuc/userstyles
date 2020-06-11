@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.0
+@version      1.0.1
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -28,7 +28,7 @@ html {
 }
 div[class^="drawer"] {
 
-    background-color: hsl(201, 20%, 27%);
+    background-color: hsl(201, 20%, 26%);
 }
 [data-e2e-test-id="show-all-results-button"]:hover {
     background: #35374a!important;
