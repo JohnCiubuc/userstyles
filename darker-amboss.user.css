@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name         Darker Amboss
+@namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
+@homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
+@version      1.0.0
+@license      Apache-1.1
+@description  Adds a dark theme to Amboss
+@author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@preprocessor uso
+==/UserStyle== */
 @-moz-document url-prefix("https://next.amboss.com/us/") {
 
 :root {
