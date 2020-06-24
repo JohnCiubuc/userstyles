@@ -15,24 +15,21 @@ If you have Stylus installed, it'll prompt you to add the userstyle.
 ----
 ## Images
 
-#### Darker Pathoma Slim [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma-slim.user.css)
-
-This removes some notifications, banners, and footer information for a more slimmer experience.
-
-
-![ps1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/PathomaSlim1.png)
-
-
-![ps2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/PathomaSlim2.png)
-
 #### Darker Pathoma [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css)
 
-Same as above, but doesn't remove any information
+This removes some notifications, banners, and footer information for a more slimmer experience.
 
 ![p1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma1.png)
 
 
 ![p2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma2.png)
+
+Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Pathoma') activates slim mode:
+
+![ps1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/PathomaSlim1.png)
+
+![ps2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/PathomaSlim2.png)
+
 
 #### Darker UWorld [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css)
 ![uworld](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld1.jpg) 

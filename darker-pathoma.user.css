@@ -2,28 +2,33 @@
 @name         Darker Pathoma
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css
-@version      1.0.1
+@preprocessor stylus
+@version      1.0.2
 @license      Apache-1.1
 @description  Adds a dark theme to Pathoma
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@var checkbox slimPathoma "Slimmer Pathoma" 0
 ==/UserStyle== */
-@-moz-document url("https://www.pathoma.com/pro-account-dashboard"), url-prefix("https://www.pathoma.com/play") {
-    
+@-moz-document url("https://www.pathoma.com/pro-account-dashboard"),
+url-prefix("https://www.pathoma.com/play") {
+
     :root {
         --bg-color: #222;
         --bg-darker: hsl(0, 0%, 19%);
         --color: #FFEAC1;
-        --color-secondary:  hsl(40, 92%, 93%);
+        --color-secondary: hsl(40, 92%, 93%);
         --nav-text: hsl(174, 48%, 50%);
     }
     /* Scrollbar*/
     html {
         scrollbar-width: auto;
         scrollbar-color: #123f55 #222;
-        background-color:var(--bg-color);
+        background-color: var(--bg-color);
     }
     /* Bold font */
-    strong,p,td {
+    strong,
+    p,
+    td {
         color: var(--color);
     }
     /* Main Containers*/
@@ -35,54 +40,69 @@
     }
 
     /* Chapter Selector Container*/
-    .playspeed {        
+    .playspeed {
         border: 1px solid var(--bg-color) !important;
     }
-    form[name="speedform"]{        
-        border-bottom:2px solid var(--nav-text) !important;
-        padding-bottom:10px;
+    form[name="speedform"] {
+        border-bottom: 2px solid var(--nav-text) !important;
+        padding-bottom: 10px;
     }
     /* Chapter Selector Dropdown */
-    select{
+    select {
         border: 1px solid var(--bg-color) !important;
-        background-color:hsl(0, 0%, 20%);
-        color:var(--color);
+        background-color: hsl(0, 0%, 20%);
+        color: var(--color);
     }
 
     /* Video player, removing padding */
     #main-content .container {
-    padding-top: 0!important;
+        padding-top: 0!important;
     }
     /* Trouble with videos? */
-    .html5report{
-        color:var(--color)!important;
+    .html5report {
+        color: var(--color)!important;
     }
     /* Trouble w/ videos green button color change */
-    .dropbtn{
-        color:var(--bg-color);
+    .dropbtn {
+        color: var(--bg-color);
     }
     /* Removes border on azure player */
-    #azureplayertable{
-        border:unset;
+    #azureplayertable {
+        border: unset;
     }
     /* Tables on video lessons */
-    .free_table_alternate{
-        background-color:var(--bg-darker);
+    .free_table_alternate {
+        background-color: var(--bg-darker);
     }
-    #free_table a{
-        color:var(--nav-text);
+    #free_table a {
+        color: var(--nav-text);
     }
     /* time description of chapter */
-    .time{
-        color:var(--color-secondary);
+    .time {
+        color: var(--color-secondary);
     }
     /* Border badding between video lessons */
-    .entry-content tr td, body.et-pb-preview #main-content .container tr td {
-    padding: 6px 24px;
-    border-top: 1px solid #313030;
-}
+    .entry-content tr td,
+    body.et-pb-preview #main-content .container tr td {
+        padding: 6px 24px;
+        border-top: 1px solid #313030;
+    }
     /* Border containing video lessons table */
-    .entry-content table, body.et-pb-preview #main-content .container table {
-    border: 1px solid #313030;
-}
+    .entry-content table,
+    body.et-pb-preview #main-content .container table {
+        border: 1px solid #313030;
+    }
+
+    /* This removes banners and padding to make a slimmer pathoma */
+    if slimPathoma {
+        .et_pb_section_0.et_pb_section,
+        p[class="statuserrata"],
+        .html5report,
+        [id="main-footer"] {
+            display: none;
+        }
+        .et_pb_section {
+            padding: 0;
+        }
+    }
 }
