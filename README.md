@@ -4,7 +4,7 @@ This repository serves as a home for various userstyles I've written using the S
 ----
 ## Installation
 
-Either click on the [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)] next to userstyle title below, or follow the manual instructions:
+Either click on the ![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square) next to userstyle title below, or follow the manual instructions:
 
 Navigate to the desired userstyle and then click the **RAW** button:
 
@@ -41,7 +41,7 @@ Same as above, but doesn't remove any information
 ![s1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark2.png)
 ![s2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark1.png)
 
-#### Darker Firecracker [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-firecracker.user.css)
+#### Darker Firecracker [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/dark-blue-firecracker.user.css)
 ![f1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerFirecracker1.jpg)
 
 #### Darker Amboss [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css)
