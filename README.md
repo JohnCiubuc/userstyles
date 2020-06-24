@@ -17,8 +17,6 @@ If you have Stylus installed, it'll prompt you to add the userstyle.
 
 #### Darker Pathoma [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css)
 
-This removes some notifications, banners, and footer information for a more slimmer experience.
-
 ![p1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma1.png)
 
 
