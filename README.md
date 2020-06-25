@@ -28,6 +28,8 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 
 ![ps2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/PathomaSlim2.png)
 
+![ps3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma3.png)
+
 
 #### Darker UWorld [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css)
 ![uworld](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld1.jpg) 
