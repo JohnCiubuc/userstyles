@@ -3,21 +3,22 @@
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css
 @preprocessor stylus
-@version      1.0.2
+@version      1.0.3
 @license      Apache-1.1
 @description  Adds a dark theme to Pathoma
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
 @var checkbox slimPathoma "Slimmer Pathoma" 0
 ==/UserStyle== */
 @-moz-document url("https://www.pathoma.com/pro-account-dashboard"),
-url-prefix("https://www.pathoma.com/play") {
+url-prefix("https://www.pathoma.com/play"),
+url("https://www.pathoma.com/login") {
 
     :root {
         --bg-color: #222;
         --bg-darker: hsl(0, 0%, 19%);
         --color: #FFEAC1;
         --color-secondary: hsl(40, 92%, 93%);
-        --nav-text: hsl(174, 48%, 50%);
+        --nav-text: #42bdb0;
     }
     /* Scrollbar*/
     html {
@@ -25,11 +26,25 @@ url-prefix("https://www.pathoma.com/play") {
         scrollbar-color: #123f55 #222;
         background-color: var(--bg-color);
     }
-    /* Bold font */
-    strong,
+    img#logo {
+        height: 0;
+        width: 0;
+        padding-top: 50px;
+        padding-left: 150px;
+        margin-left: 40px;
+        margin-top: 18px;
+        background: url("https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/pathoma_aqua.png") no-repeat;
+    }
+    /* Paragraphs */
     p,
     td {
         color: var(--color);
+    }
+    /* Bolds */
+    b,
+    strong {
+        font-weight: 700;
+        color: #EAB754;
     }
     /* Main Containers*/
     .playspeed,
@@ -91,6 +106,10 @@ url-prefix("https://www.pathoma.com/play") {
     .entry-content table,
     body.et-pb-preview #main-content .container table {
         border: 1px solid #313030;
+    }
+    /* Login page */
+    label {
+        color: var(--color);
     }
 
     /* This removes banners and padding to make a slimmer pathoma */
