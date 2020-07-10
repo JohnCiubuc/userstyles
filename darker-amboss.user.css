@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.4
+@version      1.0.5
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -29,10 +29,46 @@
         scrollbar-color: #123f55 #222;
     }
 
+    /* Search Bar */
+    [data-e2e-test-id="search-input"]{
+        background:var(--bg-darker);
+    }
+    input[class^="react-autosuggest__input"]{        
+        color:var(--color);
+    }
     /* Article */
-    [data-e2e-test-id="section-with-header"]  div[class^="headerContainer"] {
+    [data-e2e-test-id="section-with-header"] div[class^="headerContainer"] {
         background-color:unset;
         border-bottom: 1px solid #214e6d;
+    }
+    /* Learning Card Title */
+    [data-e2e-test-id="learningCardContent"] div[class^="header-886899471"]{
+        border-bottom:1px solid var(--bg-darker);
+    }
+    /* Article Toolbars */
+    div[class^="articleToolbarWrapper"] section[class^="toolbar"], 
+    div[class^="viewOptionsDropdown"]{
+        border-bottom: unset;
+        border-top: unset;
+        border-left: unset;
+        border-right: unset;
+        background-color:var(--bg-color);
+    }
+    div[class^="togglesWrapper"]{
+        border-right:2px solid var(--bg-darker);
+    }
+    [data-e2e-test-id="show-hide-sections-button"]{
+        border-bottom: unset;
+        border-left: unset;
+    }
+    div[class^="sizeButtonContainer-330741294--disableSizeButtonPointerEventOnTutorial-4201386556"]{
+        border-left:unset;
+    }
+    
+    div[class^="viewOptionsToggles"] {
+        background-color: var(--acb);
+        color: var(--color);
+        border-color: rgb(68, 74, 73);
     }
     /* Search bar*/
     .react-autosuggest__suggestion.react-autosuggest__suggestion--highlighted a {
@@ -158,12 +194,7 @@
     ::selection {
         color: #000;
     }
-    /* header toggle highhighlight*/
-    div[class^="viewOptionsToggles"] {
-        background-color: var(--acb);
-        color: var(--color);
-        border-color: rgb(68, 74, 73);
-    }
+
     /* nav bar higlight*/
     div[class^="section"][class^="focusClassName"] {
         background-image: linear-gradient(to right, rgb(123, 142, 157) 0%, rgb(123, 142, 157) 4px, rgb(131, 185, 240) 5px)!important;
