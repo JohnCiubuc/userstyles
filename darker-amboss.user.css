@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.3
+@version      1.0.4
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -29,6 +29,11 @@
         scrollbar-color: #123f55 #222;
     }
 
+    /* Article */
+    [data-e2e-test-id="section-with-header"]  div[class^="headerContainer"] {
+        background-color:unset;
+        border-bottom: 1px solid #214e6d;
+    }
     /* Search bar*/
     .react-autosuggest__suggestion.react-autosuggest__suggestion--highlighted a {
         background: #35374a!important;
