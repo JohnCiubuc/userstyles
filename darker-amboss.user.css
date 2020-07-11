@@ -2,21 +2,26 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.5
+@version      1.0.6
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
-@preprocessor uso
+@preprocessor stylus
+@var select --color "Text Color" {
+  "Wheat": "#FFEAC1",
+  "Grey, Type 1": "#D7DEE9",
+  "Grey, Type 2": "#99a7b3"
+}
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://next.amboss.com/us") {
 
     :root {
         --bg-color: hsl(200, 18%, 14%);
         --bg-darker: #2c3b42;
-        --color: #FFEAC1;
         --aqua-green: rgb(34, 225, 207);
         --acb: hsl(200, 18%, 13%);
-        --grey-text: rgb(153, 167, 179);
+        --grey-text: #99a7b3;
         --highlight-select: rgb(34, 225, 207);
         --answer-highlight-select: rgb(14, 54, 51);
         --answer-background: hsl(200, 18%, 16%);
@@ -34,7 +39,7 @@
         background:var(--bg-darker);
     }
     input[class^="react-autosuggest__input"]{        
-        color:var(--color);
+        color:--color;
     }
     /* Article */
     [data-e2e-test-id="section-with-header"] div[class^="headerContainer"] {
@@ -67,7 +72,7 @@
     
     div[class^="viewOptionsToggles"] {
         background-color: var(--acb);
-        color: var(--color);
+        color: --color;
         border-color: rgb(68, 74, 73);
     }
     /* Search bar*/
@@ -83,7 +88,7 @@
     }
 
     svg path {
-        fill: var(--color);
+        fill: --color;
     }
     button svg g path {
         fill: #99A7B3;
@@ -107,26 +112,26 @@
     [data-e2e-test-id="answer-theme-error"] {
 
         background-color: var(--answer-background);
-        color: var(--color);
+        color: --color;
         border-style: unset;
     }
     div[class^="shadow"] {
         background-color: var(--answer-highlight-select);
     }
     [data-e2e-test-id="answer-a"] {
-        color: var(--color)!important;
+        color: --color!important;
     }
     [data-e2e-test-id="answer-theme-undefined"],
     [data-e2e-test-id="answer-theme-error"],
     [data-e2e-test-id="answerExplanation"] {
         background-color: var(--answer-background);
-        color: var(--color)!important;
+        color: --color!important;
         border-style: unset;
     }
 
     [data-e2e-test-id="answer-theme-successInverted"] {
         background-color: var(--table-in);
-        color: var(--color);
+        color: --color;
         border-style: unset;
     }
     [data-e2e-test-id="hint"] {
@@ -141,21 +146,21 @@
     div[class^="cardHeaderContainer"],
     div[class^="tab"] {
         background-color: var(--bg-darker);
-        color: var(--color);
+        color: --color;
     }
     div[class^="priorityLabe"] div[class^="row"] [class^="link"] {
-        color: var(--color)!important;
+        color: --color!important;
     }
     div[class^="rowItemContainer"]:hover {
 
         background-color: var(--answer-highlight-select);
-        color: var(--color)!important;
+        color: --color!important;
     }
     div[class^="listItemContainer"],
     div[class^="sessionContainer"],
     div[class^="sessionTitle"] {
         background-color: var(--bg-darker);
-        color: var(--color)!important;
+        color: --color!important;
     }
     /* END POST QUIZ */
     /* Blue Boxes */
@@ -255,7 +260,7 @@
     }
     div[class^="breadcrumbsContainer"] {
         background-color: #233239;
-        color: var(--color);
+        color: --color;
         border-color: rgb(68, 74, 73);
     }
     div[class^="toolbar"] {
@@ -263,7 +268,7 @@
     }
     div[class^="contentContainer"] {
         background-color: #222;
-        color: var(--color);
+        color: --color;
         border-color: rgb(68, 74, 73);
     }
     /* Background on tooltip drops */
@@ -274,12 +279,12 @@
 
     div[class^="topNavCon"] {
         background-color: var(--bg-color);
-        color: var(--color);
+        color: --color;
         border-color: rgb(68, 74, 73);
     }
     div[class^="contextNavC"] {
         background-color: var(--bg-color);
-        color: var(--color);
+        color: --color;
     }
     [id="High-Yield"],
     [id="Learning Radar"],
@@ -304,7 +309,7 @@
     }
     article {
         background-color: var(--acb);
-        color: var(--color);
+        color: --color;
     }
     /* First search result*/
     div[class^="hideOverflow"] {
@@ -326,4 +331,4 @@
     h2 {
         color: #87c3ea !important;
     }
-}
+}s
