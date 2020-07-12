@@ -4,13 +4,13 @@ This repository serves as a home for various userstyles I've written using the S
 ----
 ## Installation
 
-Either click on the ![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square) next to userstyle title below, or follow the manual instructions:
+1. Install the Stylus Extension 
+    * [**Firefox**](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+    * [**Chrome**](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
 
-Navigate to the desired userstyle and then click the **RAW** button:
+2. Click on the ![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square) next to userstyle title below!
 
-![arrow-to-raw](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/arrow-to-raw.png)
-
-If you have Stylus installed, it'll prompt you to add the userstyle.
+3. If you have Stylus installed, it'll prompt you to add the userstyle.
 
 ----
 ## Images
