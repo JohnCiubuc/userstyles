@@ -16,7 +16,7 @@ This repository serves as a home for various userstyles I've written using the S
 ## Table of Contents
 
 ##### Medical School Resources
-   1. [Pathoma](#DarkerPathoma) 
+   1. [Pathoma](#abcd) 
    2. UWorld
    3. Sketchy
    4. Firecracker
