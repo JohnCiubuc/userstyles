@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Darker TwitLonger
+@namespace      https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-twitlonger.user.css
+@homepageURL    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-twitlonger.user.css
+@version        1.0.0
+@description    Darker version of TwitLonger
+@author         JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@preprocessor stylus
+@var select --color "Text Color" {
+  "Grey, Type 1": "#D7DEE9",
+  "Grey, Type 2": "#99a7b3",
+  "Wheat": "#ffeed5"
+}
+==/UserStyle== */
+@-moz-document url-prefix("https://www.twitlonger.com/show/") {
+    :root {
+        --bg-color:hsl(236, 55%, 8%);
+        --bg-darker: #1b2337;
+        --bright-color:#ffeed5;
+    }
+
+    .media-heading,
+    [id="disclaimer"] {
+        color: var(--bright-color);
+    }
+    body,
+    .navbar {
+        background-color: var(--bg-color);
+    }
+    .navbar-brand {
+        text-shadow: unset;
+    }
+    #postcontent {
+        background-color: var(--bg-darker);
+        color: --color;
+    }
+}
