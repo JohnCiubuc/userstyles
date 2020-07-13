@@ -13,9 +13,21 @@ This repository serves as a home for various userstyles I've written using the S
 3. If you have Stylus installed, it'll prompt you to add the userstyle.
 
 ----
+## Table of Contents
+
+##### Medical School Resources
+   1. [Pathoma](#DarkerPathoma) 
+   2. UWorld
+   3. Sketchy
+   4. Firecracker
+   5. Amboss
+
+##### Misc. Sites
+
+----
 ## Images
 
-#### Darker Pathoma [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css)
+#### <a name="abcd"></a> Darker Pathoma [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css)
 
 ![p1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma1.png)
 
