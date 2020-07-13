@@ -25,7 +25,7 @@ This repository serves as a home for various userstyles I've written using the S
 
 ##### Misc. Sites
    1. [TwitLonger](#dtl)
-   2. [ProWritingAid](#dpwa)
+
    
 ----
 ## Images
