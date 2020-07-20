@@ -1,0 +1,144 @@
+/* ==UserStyle==
+@name         Dark Canopy
+@namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css
+@homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css
+@version      1.0.0
+@description  A new userstyle
+@license      Apache-1.1
+@description  Adds a dark theme to Canopy
+@author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("amplifyapp.com") {
+    :root {
+        --bg-color: #222;
+        --bg-darker: hsl(0, 0%, 19%);
+        --bg-darker-secondary: hsl(0, 0%, 14%);
+        --color: #FFEAC1;
+        --color-secondary: hsl(40, 92%, 93%);
+        --nav-text: #42bdb0;
+        --bottom-banner: #648188;
+        --top-banner: hsl(166, 48%, 14%);
+        --canopy-blue: hsl(207, 58%, 53%);
+        --grey: #D7DEE9;
+    }
+    /* Links and Headers */
+    a {
+        color: var(--nav-text);
+    }
+    h5 {
+        color: var(--nav-text)!important;
+    }
+    /* Main Backgrounds */
+    .LearnMain,
+    .CoursesDashboard,
+    .LessonsDashboard,
+    .LearningPage-Backdrop {
+        background-color: var(--bg-color);
+    }
+    /* Header and Footers */
+    .NavBar {
+        background-color: var(--top-banner);
+    }
+    .Footer {
+        visibility: hidden;
+    }
+    .NavBar-Logo {
+        height: 0;
+        width: 0;
+        padding-top: 34px;
+        padding-left: 163px;
+        background: url("https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/canopy_logo.png") no-repeat;
+
+        background-size: 163px 34px;
+    }
+    /* Course Items */
+    .CoursesDashboard-Course-Box,
+    .LessonBox-Visible__container {
+        background-color: var(--bg-darker);
+        border-radius: 0px;
+    }
+    .CoursesDashboard-Button__start {
+        background-color: var(--nav-text);
+        color: var(--bg-color);
+    }
+    .CircularProgressbar-background[style] {
+        fill: #497777!important;
+    }
+    .CircularProgressbar-text[style] {
+        fill: hsl(207, 54%, 91%)!important;
+        font-size: 10px;
+    }
+    .LessonBox-Position {
+        color: var(--bg-color);
+    }
+    h1[style],
+    h6[style],
+    h4[style],
+    .LessonBox-QuizResult__constainer p[style],
+    .LessonBox-Button-Icon__dropdown i,
+    .NavigationBox-Footer-link p[style],
+    .NavigationTopic-Button i {
+        color: var(--canopy-blue)!important;
+    }
+
+    .TopicSummaryBox {
+        background-color: var(--bg-darker-secondary);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .TopicBox {
+        border: 2px solid var(--bottom-banner);
+    }
+    /* Progress Bars */
+    .ProgressBar[style] {
+        background-color: var(--color-secondary)!important;
+    }
+    .ProgressBar-filler[style] {
+        background-color: hsl(193, 86%, 46%)!important;
+    }
+
+    /* Navigation Box */
+    .NavigationBox-Footer,
+    .NavigationBox-Title,
+    .NavigationBox {
+        background-color: var(--bg-darker);
+    }
+    .NavigationBox-Title {
+        border-bottom: 1px solid var(--nav-text);
+    }
+    .NavigationBox-Footer {
+        border-top: 1px solid var(--nav-text);
+    }
+    .NavigationTopic {
+        background-color: var(--bg-darker);
+    }
+    a p[style] {
+        color: var(--canopy-blue)!important;
+    }
+    .NavigationSection:hover {
+        background-color: #161a19;
+    }
+    /* Lessons */
+    .LearningPage-Instructions,
+    .LessonAnswerButtons-ButtonBox,
+    .LearningPage-Content {
+        border: 2px solid var(--bottom-banner);
+        color: var(--color);
+    }
+
+    .LearningPage-Content .LearningPage-TextBox div div div p,
+    .DialogBox-Content-Body p,
+    .FillInTheBlankBox-QuestionBox-input {
+        color: var(--grey)!important;
+    }
+
+    .FillInTheBlankContainer > div:nth-child(2n + 1),
+    .MatchingBox-Questions-QuestionBox:nth-child(2n + 1),
+    .DragAndDropBox-Questions-QuestionBox:nth-child(2n + 1) {
+        background-color: var(--bg-darker);
+    }
+    .fas.fa-check {
+        color: var(--nav-text);
+    }
+}

@@ -1,4 +1,5 @@
 
+
 ## Overview
 This repository serves as a home for various userstyles I've written using the Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)) extension.
 
@@ -22,6 +23,7 @@ This repository serves as a home for various userstyles I've written using the S
    3. [Sketchy](#ds) 
    4. [Firecracker](#df) 
    5. [Amboss](#da) 
+   6. [Canopy](#dcanopy)
 
 ##### Misc. Sites
    1. [TwitLonger](#dtl)
@@ -53,7 +55,7 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 ![s1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark2.png)
 ![s2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark1.png)
 
-#### <a name="df"></a> Darker Firecracker [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/dark-blue-firecracker.user.css)
+#### <a name="df"></a> Darker Firecracker (Still in Major WIP, but the Quiz portion is complete) [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/dark-blue-firecracker.user.css)
 ![f1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerFirecracker1.jpg)
 
 #### <a name="da"></a> Darker Amboss [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css)
@@ -62,6 +64,9 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 ![a2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss2.jpg)
 ![a3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss4.jpg)
 
+#### <a name="dcanopy"></a> Darker Canopy [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css)
+
+![dc1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Canopy1.png)
 
 #### <a name="dtl"></a> Darker TwitLonger [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-twitlonger.user.css)
 ![f1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/TwitLonger1.png)
