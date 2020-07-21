@@ -2,8 +2,7 @@
 @name         Dark Canopy
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css
-@version      1.0.0
-@description  A new userstyle
+@version      1.0.1
 @license      Apache-1.1
 @description  Adds a dark theme to Canopy
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -13,7 +12,8 @@
     :root {
         --bg-color: #222;
         --bg-darker: hsl(0, 0%, 19%);
-        --bg-darker-secondary: hsl(0, 0%, 14%);
+        --bg-darker-secondary: hsl(0, 0%, 14%);        
+        --bg-darker-tertiary: hsl(171, 11%, 20%);
         --color: #FFEAC1;
         --color-secondary: hsl(40, 92%, 93%);
         --nav-text: #42bdb0;
@@ -129,16 +129,33 @@
 
     .LearningPage-Content .LearningPage-TextBox div div div p,
     .DialogBox-Content-Body p,
-    .FillInTheBlankBox-QuestionBox-input {
+    .FillInTheBlankBox-QuestionBox-input,
+    .DropDownBox select {
         color: var(--grey)!important;
     }
 
     .FillInTheBlankContainer > div:nth-child(2n + 1),
     .MatchingBox-Questions-QuestionBox:nth-child(2n + 1),
-    .DragAndDropBox-Questions-QuestionBox:nth-child(2n + 1) {
+    .DragAndDropBox-Questions-QuestionBox:nth-child(2n + 1),
+    .DropDownContainer > div:nth-child(2n+1){
         background-color: var(--bg-darker);
     }
-    .fas.fa-check {
+    .fas.fa-check{
         color: var(--nav-text);
+    }
+    .DragElement,
+    .DropArea-Options{
+        background-color:var(--bg-darker-tertiary);
+        color:var(--grey);
+        font-weight:bold;
+        font-size:22px;
+    }
+    /* Tables */
+    th {
+        background-color: #1f3238;
+    }
+    /* Dropdown Boxes */
+    .DropDownBox-Select select[style]{
+            background-color:var(--bg-darker-tertiary)!important;
     }
 }
