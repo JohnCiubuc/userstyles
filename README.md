@@ -74,6 +74,6 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 
 #### <a name="dgm"></a> Darker GroupMe [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-gropume.user.css)
 
-![f2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/gropume1.png)
+![f2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/groupme1.png)
 
-![f3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/gropume2.png)
+![f3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/groupme2.png)
