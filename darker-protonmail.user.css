@@ -1,0 +1,163 @@
+/* ==UserStyle==
+@name         Darker ProtonMail
+@namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-protonmail.user.css
+@homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-protonmail.user.css
+@version      1.0.0
+@license      Apache-1.1
+@description  Darker ProtonMail using the same color scheme as ProtonMail
+@author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("mail.protonmail.com") {
+    :root {
+        --color: #FFEAC1;
+        --grey: #D7DEE9;
+        --grey-2: #99a7b3;
+
+
+        --proton-purple: #505061;
+        --proton-purple-sec: #6A6F7C;
+        --proton-purple-ter: #838791;
+        --proton-lav: #9397CD;
+
+        --proton-fadegrey: #E6EAF0;
+        --proton-textgrey: #A7A7B0;
+
+        --proton-purple-dark: hsl(240, 10%, 27%);
+        --proton-purple-lighter: hsl(240, 10%, 44%);
+    }
+    /* Scroll bar */
+    /* Conversations */
+    .conversation .row h4 .subject-num-message {
+        color: var(--color);
+    }
+    .conversation .row h4 {
+        color: var(--grey);
+    }
+    .conversation {
+        background-color: var(--proton-purple-lighter);
+        color: var(--grey);
+        border-bottom: 1px solid var(--grey);
+    }
+
+    .conversation.read {
+        background-color: var(--proton-purple);
+        color: var(--grey);
+        border-bottom: 1px solid var(--proton-purple-dark);
+    }
+    /* Right panel*/
+    .countElementsSelected-container,
+    .countElementsSelected-btn-unselect,
+    .messageExtra-container > [class*="-container"] [class*="-button"],
+    .conversationPlaceholder,
+    .conversationPlaceholder section,
+    body #pm_view.latest {
+        background-color: var(--proton-purple);
+        color: var(--grey);
+        border: 1px solid var(--proton-purple-dark);
+    }
+    .conversationPlaceholder #storageStatus .wrap span {
+        background-color: var(--proton-purple);
+        color: var(--grey);
+    }
+
+    .conversationPlaceholder header {
+        background-color: var(--proton-purple);
+        color: var(--grey);
+        border-bottom: 1px solid var(--proton-purple-dark);
+    }
+
+    /* Email Body */
+    #pm_composer .composer .row,
+    #pm_composer .composer .row select,
+    .squireEditor-loaded .row select,
+    .composerInputMeta-overlay-list,
+    .composerInputMeta-overlay,
+    .composerInputMeta-overlay-list .svg-ellipsis-clipper,
+    #pm_composer .composer .row input,
+    #pm_composer .composer .row select,
+    .squireEditor-loaded .row input,
+    .squireEditor-loaded .row select {
+        background: var(--proton-purple-dark);
+        color: var(--grey);
+    }
+    .squireToolbar-row-1,
+    .squireToolbar-select-list,
+    #pm_composer .composer footer {
+        background: var(--proton-purple);
+        color: var(--grey);
+    }
+    [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
+        background: var(--proton-purple-lighter);
+        border: 1px solid var(--proton-purple-dark);
+    }
+    #pm_composer .composer footer .pm_button.primary,
+    .squireEditor-loaded footer .pm_button.primary {
+        color: var(--proton-purple);
+        background: var(--proton-fadegrey);
+    }
+    /* right panel message*/
+    #conversation-view header,
+    #conversation-view header h1,
+    body #pm_thread {
+        background-color: var(--proton-purple-dark);
+    }
+    #conversation-view header h1 {
+        color: var(--color);
+    }
+    #conversation-view header {
+        border-bottom: 1px solid var(--proton-purple-lighter);
+        color: var(--color);
+    }
+    #conversation-view .message .details,
+    #conversation-view .message .summary,
+    #conversation-view .message .summary .summary-right,
+    #conversation-view .message .summary .time,
+    #conversation-view .message .summary .status {
+        background-color: var(--proton-purple-dark);
+        color: var(--grey-2);
+    }
+    .messageExtra-container > [class*="-container"]:not(:last-child) {
+        background-color: var(--proton-purple-lighter);
+        color: var(--grey);
+    }
+    #conversation-view .message {
+        border: 1px solid var(--proton-purple-lighter);
+    }
+    /* Navbar */
+    .headerSecuredDesktop-container {
+        background-color: var(--proton-purple);
+    }
+    /* Toolbar */
+    .pm_toolbar.pm_toolbar_withSelector {
+        background-color: var(--proton-purple);
+        box-shadow: inset 0 -1px 0 var(--proton-purple-dark);
+    }
+    body[id^="secured-inbox"] .pm_buttons .moveElement-btn-spam {
+
+        border-right: 1px solid var(--proton-purple-dark);
+    }
+    .pm_buttons a,
+    .pm_buttons .pm_buttons-child,
+    #conversation-view .message .details .pull-right .pm_buttons,
+    #conversation-view .message .details .pm_buttons .pm_buttons:first-of-type a,
+    #conversation-view .message .details .pm_buttons a,
+    #conversation-view .message .details .pm_buttons .pm_buttons:last-of-type a,
+    #conversation-view .message .details .pm_buttons .pm_buttons:last-of-type a,
+    #conversation-view .message .details .pm_buttons > .dropdown-actions-nowrap-more,
+    #pm_composer .composer footer .pm_button {
+        background-color: var(--proton-purple);
+        color: var(--proton-textgrey);
+        border: 1px solid var(--proton-purple-dark);
+    }
+    .paginator-disabled-previous .paginator-btn-previous {
+        box-shadow: inset 0 0 50rem 0 var(--proton-textgrey);
+        color: var(--proton-fadegrey);
+    }
+    .appConfigBody-rows .chooseLayoutBtns-btn-rows,
+    body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
+
+        background-color: var(--proton-purple-sec);
+        border: var(--proton-purple-sec);
+    }
+}
