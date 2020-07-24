@@ -77,6 +77,6 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 
 ![f3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/groupme2.png)
 
-#### <a name="dprotonmail"></a> Darker ProtonMail [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-gropume.user.css)
+#### <a name="dprotonmail"></a> Darker ProtonMail [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-protonmail.user.css)
 
 ![f3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/protonmail.png)
