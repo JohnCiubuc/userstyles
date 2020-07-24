@@ -2,7 +2,7 @@
 @name         Darker ProtonMail
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-protonmail.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-protonmail.user.css
-@version      1.0.0
+@version      1.0.1
 @license      Apache-1.1
 @description  Darker ProtonMail using the same color scheme as ProtonMail
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -129,7 +129,8 @@
         background-color: var(--proton-purple);
     }
     /* Toolbar */
-    .pm_toolbar.pm_toolbar_withSelector {
+    .pm_toolbar.pm_toolbar_withSelector,
+    .toolbarMobile-container {
         background-color: var(--proton-purple);
         box-shadow: inset 0 -1px 0 var(--proton-purple-dark);
     }
@@ -145,7 +146,8 @@
     #conversation-view .message .details .pm_buttons .pm_buttons:last-of-type a,
     #conversation-view .message .details .pm_buttons .pm_buttons:last-of-type a,
     #conversation-view .message .details .pm_buttons > .dropdown-actions-nowrap-more,
-    #pm_composer .composer footer .pm_button {
+    #pm_composer .composer footer .pm_button,
+    .toolbarMobile-container .pm_buttons > button:only-of-type {
         background-color: var(--proton-purple);
         color: var(--proton-textgrey);
         border: 1px solid var(--proton-purple-dark);
