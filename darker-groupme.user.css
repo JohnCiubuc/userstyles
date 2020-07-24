@@ -1,0 +1,161 @@
+/* ==UserStyle==
+@name         Darker GroupMe
+@namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-groupme.user.css
+@homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-groupme.user.css
+@version      1.0.0
+@license      Apache-1.1
+@description  Adds a dark theme to GroupMe
+@author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("web.groupme.com") {
+    :root {
+        --gm-blue: #00AFF0;
+        --gm-dark-blue: hsl(196, 100%, 21%);
+        --gm-highlight-blue: #6ea1b4;
+        --gm-grey-blue: hsl(196, 27%, 74%);
+        --bg-color: #222;
+        --bg-darker: hsl(0, 0%, 19%);
+        --bg-darker-secondary: hsl(0, 0%, 25%);
+        --bg-darker-tertiary: hsl(0, 0%, 25%);
+        --bg-dark-self: hsl(216, 13%, 19%);
+        --color: #FFEAC1;
+        --nav-text: #42bdb0;
+        --grey: #D7DEE9;
+        --grey-2: #99a7b3;
+    }
+    html {
+        scrollbar-width: auto;
+        scrollbar-color: #123f55 #222;
+        background-color: var(--bg-color);
+    }
+
+    .chat-messages .message.system,
+    .chat-messages .message.system .message-body .message-text {
+        background-color: var( --bg-darker-secondary);
+        color: var(--color);
+    }
+    .chat-messages .message .pasted {
+        border-left-color: var(--gm-blue);
+        color: var(--grey-2);
+    }
+
+    .chat-messages .message .message-header .nickname {
+        color: var(--gm-highlight-blue);
+    }
+    .chat-messages .message.with-timestamp,
+    .chat-messages .message.is-bookend,
+    .chat-messages .message,
+    .chat-messages .pages,
+    #chats,
+    body,
+    #chats .chat-content .chat-content-layout .chat-messages,
+    .chat-menu,
+    #chats .chat-header .dropdown-menu {
+        background-color: var(--bg-darker);
+        color: var(--grey);
+    }
+    .message-composer {
+        color: var(--grey);
+        background-color: var(--bg-color);
+        border-top: 1px solid var(--gm-dark-blue);
+    }
+    .chat-messages .message.me {
+
+        background-color: var(--bg-dark-self);
+    }
+    .chat-messages .message.me.highlight {
+
+        background-color: var(--bg-dark-self);
+    }
+    /* Chat top bar */
+    #chats .chat-header,
+    #chats .chat-header .menu-toggle .chat-name {
+        background-color: var(--bg-color);
+        color: var(--grey);
+    }
+    /* timestamp div*/
+    .chat-messages .timestamp-divider {
+        color: var(--grey);
+        background-color: var(--bg-darker);
+    }
+    /* chat messages*/
+    #chats .chat-header .menu-toggle .chat-name {
+        background: var(--bg-color);
+    }
+    #chats .chat {
+        border-left: 5px solid var(--bg-color);
+        border-right: 1px solid var(--bg-color);
+    }
+    #tray {
+        border-right: 1px solid var(--bg-color);
+    }
+    /* Header */
+    #tray .tray-header h3 {
+        color: var(--grey);
+    }
+    /* Main Backgrounds */
+    #tray .tray-list .list-heading {
+        color: var(--gm-blue);
+    }
+    .groupme-list .list-content p {
+        color: var(--gm-grey-blue);
+    }
+    .groupme-list .list-item:hover,
+    .groupme-list .list-item.selected,
+    .groupme-list .list-item.active,
+    .groupme-list .list-item:focus {
+        background-color: var(--bg-darker-secondary);
+    }
+    .groupme-list .list-item {
+
+        background-color: var(--bg-darker);
+        border-bottom: 1px solid var(--bg-color);
+    }
+    .pillar,
+    #tray .tray-header .row,
+    #tray .list-search {
+        border-bottom: unset;
+        border-right: solid 1px var(--bg-color);
+        background-color: var(--bg-color);
+        color: var(--grey);
+    }
+    #tray .tray-list {
+        background-color: var(--bg-darker-tertiary);
+    }
+    #tray .list-search input,
+    .pillar .tab.logo:hover,
+    .pillar .tab.logo:focus,
+    .pillar .tab.logo.active,
+    #chats .onboard {
+        background-color: var(--bg-darker-secondary);
+    }
+    #chats .onboard .empty_group h3 {
+        color: var(--grey);
+    }
+
+    .pillar .tab.active {
+        background-color: var(--bg-darker-secondary);
+    }
+    /* bottom right dropdown*/
+    .message-composer .composer-layout .dropdown-menu-right,
+    .message-composer .composer-layout .dropdown-menu-right li button span,
+    .message-composer .composer-layout .dropdown-menu-right li .button span,
+    .message-composer .composer-layout .dropdown-menu-right li button.upload .wrap-icon,
+    .message-composer .composer-layout .dropdown-menu-right li .button.upload .wrap-icon,
+    [class^="gmn-icon-"],
+    [class*=" gmn-icon-"],
+    .emoji-menu .pack-container.currentPack,
+    .emoji-menu .pack-switcher,
+    .emoji-menu .emoji-preview,
+    .emoji-menu .emoji-preview .emoji-label,
+    .emoji-menu .pack-switcher .slider-control.next,
+    .emoji-menu .pack-switcher .slider-control.prev {
+        background-color: var(--bg-darker);
+        color: var(--grey);
+    }
+    .message-composer .composer-layout .dropdown-menu-right li button:hover span,
+    .message-composer .composer-layout .dropdown-menu-right li .button:hover span {
+        color: var(--color);
+    }
+}
