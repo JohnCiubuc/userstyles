@@ -2,7 +2,7 @@
 @name         Darker GroupMe
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-groupme.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-groupme.user.css
-@version      1.0.0
+@version      1.0.2
 @license      Apache-1.1
 @description  Adds a dark theme to GroupMe
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -39,7 +39,10 @@
         border-left-color: var(--gm-blue);
         color: var(--grey-2);
     }
-
+    /* Channel name*/
+    [gm-twemoji="chat.name"][style]{
+        color: var(--grey-2)!important;
+    }
     .chat-messages .message .message-header .nickname {
         color: var(--gm-highlight-blue);
     }
@@ -52,10 +55,10 @@
     #chats .chat-content .chat-content-layout .chat-messages,
     .chat-menu,
     #chats .chat-header .dropdown-menu {
-        background-color: var(--bg-darker);
-        color: var(--grey);
+        background-color: var(--bg-darker)!important;
+        color: var(--grey)!important;
     }
-    .message-composer {
+    .message-composer{
         color: var(--grey);
         background-color: var(--bg-color);
         border-top: 1px solid var(--gm-dark-blue);
@@ -68,6 +71,11 @@
 
         background-color: var(--bg-dark-self);
     }
+    /* Self if you have android?*/
+    div[id^="android"][style] {
+        background-color: var(--bg-dark-self)!important;
+        color: var(--grey)!important;
+        }
     /* Chat top bar */
     #chats .chat-header,
     #chats .chat-header .menu-toggle .chat-name {
