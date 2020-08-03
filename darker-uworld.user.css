@@ -2,29 +2,122 @@
 @name         Darker UWorld
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
-@version      1.0.3
+@version      1.0.4
 @license      Apache-1.1
 @description  Adds a dark theme to UWorld
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
-@preprocessor uso
+@preprocessor stylus
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.uworld.com/ClientApp/V") {
+@-moz-document url-prefix("https://www.uworld.com/ClientApp"),
+url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
+
+    :root {
+        --uw-dark: #273542;
+        --uw-med: #2F4050;
+        --uw-lite: hsl(209, 26%, 30%);
+        --grey: #D7DEE9;
+        --grey-secondary: #b4bbc5;
+        --dark-grey: hsl(215, 14%, 38%);
+        --light-grey: hsl(217, 29%, 96%);
+        --color: #FFEAC1;
+        --h-color: #fff2a8;
+    }
+    /* Performance Page */
+    mat-toolbar-row[class="mat-toolbar-row d-flex justify-content-between w-100 default-bar"],
+    span[class="header-text header-font ng-star-inserted"] {
+        background-color: var(--uw-dark)!important;
+        color: var(--grey)!important;
+    }
+    .mainlayout .rightcontent,
+    .mat-toolbar {
+        background-color: var(--uw-dark)!important;
+    }
+    .overall-first-tabs .mat-tab-body-wrapper,
+    .report-first-tabs .report-second-tabs {
+        background-color: var(--uw-med);
+    }
+    .overall-first-tabs .statistics-title,
+    .stats-title {
+        color: #fff!important;
+    }
+    .stats-row {
+        color: var(--grey-secondary)!important;
+    }
+    /* Performance Circles */
+    div[class="uworld-overall-mid-size-column"] div div:last-child,
+    .label-plain,
+    .label-plain-disabled,
+    .score {
+        background-color: var(--dark-grey)!important;
+        color: var(--light-grey)!important;
+    }
+    /*
+        Text in circles
+    */
+    g text tspan[style] {
+        fill: var(--grey);
+    }
+    /* previous test */
+    #previousTests_wrapper select {
+        color: var(--grey);
+    }
+    /* active report tab */
+    .report-first-tabs .mat-tab-header .mat-tab-label-active,
+    .report-first-tabs .report-second-tabs .mat-tab-header .mat-tab-label-active {
+        background-color: var(--uw-dark);
+        color: var(--grey);
+    }
+    .report-first-tabs .report-second-tabs .filter-div .dropdown-name,
+    .report-first-tabs .report-second-tabs .filter-div .mat-select-value {
+        color: var(--grey);
+    }
+    /* Report tables*/
+    .mat-table thead {
+        background-color: var(--uw-lite);
+        color: var(--grey);
+    }
+    /* Report Tables Row */
+    table.mat-table tr:not(.expanded-row):not(.detail-row) td,
+    tr.element-row.expanded-row {
+        background-color: var(--uw-lite);
+        color: var(--grey);
+    }
+    tr.detail-row {
+        background-color: var(--uw-dark);
+    }
+    .top-margin10,
+    table.mat-table td {
+        color: var(--grey)!important;
+    }
+    /* Regular Page */
+    /* Sliders */
     .gray-bg {
-        background-color: #273542;
+        background-color: var(--uw-dark);
     }
     .footer {
-        background: #273542!important;
+        background: var(--uw-dark)!important;
         border-top: 0px !important;
     }
     .navbar-static-top {
-        background-color: #273542!important;
-        color: #fffaf0;
+        background-color: var(--uw-dark)!important;
+        color: var(--grey);
     }
     .modal-header.has-warning {
         background-color: #b96913;
     }
     .modal-header.has-error {
         background-color: #a22a37;
+    }
+
+    .hidden-xs button[style] {
+        background-color: var(--uw-dark)!important;
+    }
+    .col-xs-12 div[class="row"] div[style] {
+        background-color: var(--uw-med)!important;
+    }
+    h5,
+    label {
+        color: var(--grey)!important;
     }
     .btn-default:hover,
     .btn-default:focus,
@@ -39,12 +132,12 @@
     }
     .ibox-title,
     .ibox-content {
-        background-color: #2F4050;
-        color: #fffaf0;
-        border-color: #2F4050;
+        background-color: var(--uw-med);
+        color: var(--grey);
+        border-color: var(--uw-med);
     }
     .createTestQuestionBox {
-        background-color: #273542;
+        background-color: var(--uw-dark);
         border: 0px solid #cccccc;
         color: #f8f4eb!important;
         width: 45px !important;
@@ -52,7 +145,7 @@
     a.textHighlight,
     a.textHighlight:hover {
         color: #000!important;
-        background-color: #fff2a8;
+        background-color: var(--h-color);
     }
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:focus {
@@ -105,7 +198,7 @@
         width: 10;
     }
     rect {
-        fill: #2F4050;
+        fill: var(--uw-med);
         width: 10;
     }
     g text {
@@ -142,11 +235,7 @@
         color: #FFEAC1;
     }
     .table-striped > tbody > tr:nth-of-type(2n+1) {
-        background-color: #123251;
-    }
-    .form-control,
-    .single-line {
-        color: #000;
+        background-color: var(--uw-lite);
     }
     .opac08 {
         color: #4dc2f0;
@@ -154,8 +243,9 @@
     .opac04 {
         color: #4dc2f0;
     }
+    /* Previous test hover*/
     .table-hover > tbody > tr:hover {
-        background-color: #023d71;
+        background-color: var(--uw-dark);
     }
     .datatableCustomHeader {
         background-color: unset;

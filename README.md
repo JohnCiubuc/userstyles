@@ -51,7 +51,9 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 
 
 #### <a name="duw"></a> Darker UWorld [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css)
-![uworld](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld1.jpg) 
+![uworld1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld3.png) 
+![uworld2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld2.png) 
+![uworld3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld1.jpg) 
 
 #### <a name="ds"></a> Darker Sketchy [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-sketchy.user.css)
 ![s1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark2.png)
