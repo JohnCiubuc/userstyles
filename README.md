@@ -66,7 +66,7 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 ![a2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss2.jpg)
 ![a3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss4.jpg)
 
-#### <a name="dcanopy"></a> Darker Canopy [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css)
+#### <a name="dcanopy"></a> Darker Canopy (Still WIP -- Compatibility may be an issue) [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css)
 
 ![dc1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Canopy1.png)
 
