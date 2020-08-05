@@ -2,15 +2,15 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.6
+@version      1.0.7
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
 @preprocessor stylus
 @var select --color "Text Color" {
-  "Wheat": "#FFEAC1",
   "Grey, Type 1": "#D7DEE9",
-  "Grey, Type 2": "#99a7b3"
+  "Grey, Type 2": "#99a7b3",
+  "Wheat": "#FFEAC1"
 }
 
 ==/UserStyle== */
@@ -19,6 +19,8 @@
     :root {
         --bg-color: hsl(200, 18%, 14%);
         --bg-darker: #2c3b42;
+        --bg-darker-secondary: hsl(0, 0%, 25%);
+        --bg-darker-tertiary: hsl(0, 0%, 25%);
         --aqua-green: rgb(34, 225, 207);
         --acb: hsl(200, 18%, 13%);
         --grey-text: #99a7b3;
@@ -28,6 +30,10 @@
         --table-out: hsla(209, 23%, 19%, .929);
         --table-in: hsla(209, 26%, 23%, .929);
         --nav-text: hsl(174, 48%, 50%);
+        
+        --amboss-green:#0DBF8F;
+        --amboss-yellow:#F1D56B;
+        --amboss-red:#EE6160;
     }
     html {
         scrollbar-width: auto;
@@ -41,6 +47,50 @@
     input[class^="react-autosuggest__input"]{        
         color:--color;
     }
+    /* Question Prompt */
+    [data-e2e-test-id="questionSessionMainSpace"] div div div[class^="body"],
+    [data-e2e-test-id="questionSessionMainSpace"] div div[class^="flush"]{
+        background-color:var(--bg-darker);
+            border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    article[class^="questionConten"],
+    article[class^="hint"]{
+        background-color:var(--bg-darker);
+    }
+    [data-e2e-test-id="answer-theme-errorInverted"]        {
+            color:#000!important;
+        }
+    /* Questions ;previous button */
+    div[class^="buttonCon"] div [data-e2e-test-id="prev-button"]{
+        background-color:var(--bg-darker);
+        color:var(--grey-text);
+    }
+    /* Create question session */
+    div[id="MODAL-TARGET-ID"] div div[class^="modal"],
+    div[id="MODAL-TARGET-ID"] div div[class^="modal"] div[class^="conta"],
+    div[id="MODAL-TARGET-ID"] div div[class^="modal"] div[class^="conta"] div div div div span {
+        background-color:var(--bg-darker);
+        color:var(--grey-text);
+    }
+    /* Button Hover, main pages */
+    div[class^="buttonContainer"] div[class^="contentWithC"] div button:hover,
+    div[class^="container"] div[class^="buttonWra"] button:hover,
+    div[class^="widget"] div[class^="contentWithC"] div button:hover{
+        box-shadow:#3c7e49 0px 8px 16px 0px;
+    }
+
+    /* Grey text on main pages */
+    div[class^="buttonContainer"] div[class^="contentWithC"] div[class^="textContain"] span[class^="base"],
+    div[class^="widget"] div[class^="contentWithC"] div[class^="textContain"] span[class^="base"],
+    div[class^="widget"] div[class^="widget"] h3[class^="widget"]{
+            color:var(--grey-text);
+    }
+
+    /* Main Page .. Continue */
+    div[class^="fullHeight"] div[class^="upperPart"] h1[class^="title"]{
+            color:var(--grey-text)!important;
+        }
     /* Article */
     [data-e2e-test-id="section-with-header"] div[class^="headerContainer"] {
         background-color:unset;
@@ -87,9 +137,6 @@
         background: #35374a!important;
     }
 
-    svg path {
-        fill: --color;
-    }
     button svg g path {
         fill: #99A7B3;
     }
@@ -117,9 +164,6 @@
     }
     div[class^="shadow"] {
         background-color: var(--answer-highlight-select);
-    }
-    [data-e2e-test-id="answer-a"] {
-        color: --color!important;
     }
     [data-e2e-test-id="answer-theme-undefined"],
     [data-e2e-test-id="answer-theme-error"],

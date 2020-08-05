@@ -62,7 +62,8 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 #### <a name="df"></a> Darker Firecracker (Install Disabled Pending Compatibility)
 ![f1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerFirecracker1.jpg)
 
-#### <a name="da"></a> Darker Amboss (Install Disabled Pending Compatibility)
+#### <a name="da"></a> Darker Amboss [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css)
+
 
 ![a1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss1.png)
 ![a2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss2.jpg)
