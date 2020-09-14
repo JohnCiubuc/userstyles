@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.7
+@version      1.0.8
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -14,7 +14,7 @@
 }
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://next.amboss.com/us") {
+@-moz-document url-prefix("https://next.amboss.com/us/questions"), url-prefix("https://next.amboss.com/us/search/") {
 
     :root {
         --bg-color: hsl(200, 18%, 14%);
@@ -30,6 +30,7 @@
         --table-out: hsla(209, 23%, 19%, .929);
         --table-in: hsla(209, 26%, 23%, .929);
         --nav-text: hsl(174, 48%, 50%);
+        
         
         --amboss-green:#0DBF8F;
         --amboss-yellow:#F1D56B;
@@ -61,6 +62,20 @@
     [data-e2e-test-id="answer-theme-errorInverted"]        {
             color:#000!important;
         }
+        /* Answer Circles */
+    div[class^="answerText"] div[class^="letterAndText"] div[class^="container"] {
+            background-color:var(--bg-darker)!important;
+            border-color:var(--bg-darker)!important;
+        }
+        /* Skip Button */
+    [data-e2e-test-id="next-button"] {
+            background-color:var(--table-out);
+        }
+    span[class^="userHighlight"],
+    span[class^="userHighlightIsActive"]{
+        color:var(--bg-darker-tertiary);
+        background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 3%,#e6db5c 0,#b3ab43 80%,#b3ab43 0,#b3ab43 96%,#b3ab43 0,#b3ab43);
+    }
     /* Questions ;previous button */
     div[class^="buttonCon"] div [data-e2e-test-id="prev-button"]{
         background-color:var(--bg-darker);
