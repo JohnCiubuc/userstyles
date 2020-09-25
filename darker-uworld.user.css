@@ -2,7 +2,7 @@
 @name         Darker UWorld
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
-@version      1.0.5
+@version      1.0.6
 @license      Apache-1.1
 @description  Adds a dark theme to UWorld
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -41,6 +41,23 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
         color: #fff!important;
     }
     .stats-row {
+        color: var(--grey-secondary)!important;
+    }
+    /* Vignette Panel */
+    .daymode .nbme #vignettedescriptor {
+
+        background-color: var(--uw-dark);
+        border: 1px solid var(--uw-med);
+    }
+    /* Lab Panel*/
+    .daymode .labs,
+    .labs #labContent,
+    #labContent,
+    .daymode .labs #blood,
+    .daymode .labs #cereberospinal,
+    .daymode .labs #hematologic,
+    .daymode .labs #sweat {
+        background-color: var(--uw-dark);
         color: var(--grey-secondary)!important;
     }
     /* Performance Circles */
@@ -196,7 +213,7 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
     svg rect:nth-child(2),
     svg g g:nth-child(1) rect,
     svg g g:nth-child(3) rect,
-    svg g g:nth-child(5 ) rect{
+    svg g g:nth-child(5) rect {
         fill: var(--uw-med)!important;
     }
     g text {

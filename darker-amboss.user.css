@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.8
+@version      1.0.9
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -77,9 +77,14 @@
         background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 3%,#e6db5c 0,#b3ab43 80%,#b3ab43 0,#b3ab43 96%,#b3ab43 0,#b3ab43);
     }
     /* Questions ;previous button */
-    div[class^="buttonCon"] div [data-e2e-test-id="prev-button"]{
+    div[class^="buttonCon"] div [data-e2e-test-id="prev-button"],
+    [data-e2e-test-id="question-context-sidebar-analysis-btn"]{
         background-color:var(--bg-darker);
         color:var(--grey-text);
+    }
+    /* Labs Container */
+    div[class^="labValuesWrapper"]{
+            background-color:var(--bg-darker);
     }
     /* Create question session */
     div[id="MODAL-TARGET-ID"] div div[class^="modal"],
