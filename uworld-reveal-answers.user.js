@@ -28,6 +28,7 @@
 [class="fal fa-lg fa-check"],
 [class="fal fa-lg fa-times"],
 .explanation,
+.pace pace-active,
 [class="answerStatsBarInsideDiv"],
 a[class="textHighlight"].a[class^="selection"]{
     visibility: hidden;
