@@ -33,6 +33,10 @@ a[class="textHighlight"].a[class^="selection"]{
     visibility: hidden;
     display: none;
 }
+
+strike {
+    text-decoration:none;
+}
 `;
             // Add it to page so that previous answers and explanations are hidden
             document.head.appendChild(style);
