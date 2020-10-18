@@ -1,7 +1,8 @@
 
 
+
 ## Overview
-This repository serves as a home for various userstyles I've written using the Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)) extension.
+This repository serves as a home for various userstyles (and now userscripts) I've written using the Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)) extension.
 
 ----
 ## Installation
@@ -20,10 +21,11 @@ This repository serves as a home for various userstyles I've written using the S
 ##### Medical School Resources
    1. [Pathoma](#DarkerPathoma) 
    2. [UWorld](#duw) 
-   3. [Sketchy](#ds) 
-   4. [Firecracker](#df) 
-   5. [Amboss](#da) 
-   6. [Canopy](#dcanopy)
+   3. [UWorld Reveal Answers (userscript)](#ura)
+   4. [Sketchy](#ds) 
+   5. [Firecracker](#df) 
+   6. [Amboss](#da) 
+   7. [Canopy](#dcanopy)
 
 ##### Misc. Sites
    1. [TwitLonger](#dtl)
@@ -35,11 +37,6 @@ This repository serves as a home for various userstyles I've written using the S
 ## Images
 
 #### <a name="DarkerPathoma"></a> Darker Pathoma [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-pathoma.user.css)
-
-![p1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma1.png)
-
-
-![p2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/Pathoma2.png)
 
 Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Pathoma') activates slim mode:
 
@@ -54,6 +51,9 @@ Activating the toggle (Click Stylus extension -> Cog wheel next to 'Darker Patho
 ![uworld1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld3.png) 
 ![uworld2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld2.png) 
 ![uworld3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/DarkerUWorld1.jpg) 
+#### <a name="ura"></a> UWorld Reveal Answers (userscript)[![](https://raw.github.com/jerone/UserScripts/master/_resources/Install-button.png)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/uworld-reveal-answers.user.js)
+
+Adds a 'Reveal Answer' button when reviewing previous tests
 
 #### <a name="ds"></a> Darker Sketchy [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-sketchy.user.css)
 ![s1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/SketchyDark2.png)
