@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UWorld Review Answers
 // @namespace    mailto:john.ciubuc@ttuhsc.edu
-// @version      1.0
+// @version      1.1
 // @description  Hides and Reveals Answers
 // @author       John Ciubuc
 // @match        https://www.uworld.com/ClientApp/v*/apps/qbanktestinterface/index.html
