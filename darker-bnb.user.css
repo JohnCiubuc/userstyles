@@ -1,0 +1,175 @@
+/* ==UserStyle==
+@name           Darker Boards and Beyond
+@namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-bnb.user.css
+@homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-bnb.user.css
+@preprocessor stylus
+@version        1.0.0
+@description    Adds a dark theme to Boards and Beyond
+@author         JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
+==/UserStyle== */
+@-moz-document domain("boardsbeyond.com") {
+    :root {
+        --bg-color: #222;
+        --bg-darker: hsl(0, 0%, 19%);
+        --bg-black: hsl(0, 0%, 0%);
+        --bg-lighter-hover: hsl(0, 0%, 27%);
+        --color: #FFEAC1;
+        --color-secondary: hsl(40, 92%, 93%);
+        --nav-text: #42bdb0;
+        --grey: #D7DEE9;
+        --grey-secondary: #b4bbc5;
+    }
+    header[class="site-header"] {
+        background-color: var(--bg-darker);
+        color: var(--grey);
+    }
+    /* Switch top right */
+    div[id="tourStepSwitch"] {
+        background-color: var(--bg-lighter-hover);
+    }
+    /* Header top right */
+    span[class="mat-button-wrapper"],
+    div[class="hed-right"],
+    div[id="tourGlobalSearch"] {
+        color: var(--grey);
+    }
+
+    /* Step progress bar */
+    div[class="progressbar-status"],
+    div[class="progressbar-data ng-star-inserted"] {
+        background-color: var(--grey-secondary)!important;
+        color: var(--bg-color)!important;
+    }
+    /* Main Background */
+    html,
+    body,
+    body[class="vsc-initialized page-home"],
+    page-footer[class="ng-star-inserted"],
+    footer[class="site-footer"],
+    div[class="app-main-wrapper"] {
+        background-color: var(--bg-color);
+    }
+
+    /* Back TItle*/
+    div[class="dashboard-header"] {
+        color: var(--grey-secondary);
+    }
+
+    /* Main Page Pods */
+    div[class="dashboard-flashbox-item bb-panel ng-star-inserted"],
+    div[id="tourLatestNews"],
+    div[class="dashboard-quickinfo bb-panel small-shadow mb-4 py-3"],
+    div[class="dashboard-quizcats bb-panel small-shadow"],
+    div[class="dashboard-quizinfo bb-panel ng-star-inserted"],
+    div[class="dashboard-videozone bb-panel"],
+    div[class="dashboard-watchedvideos bb-panel"] {
+        background-color: var(--bg-darker);
+        color: var(--grey-secondary)!important;
+    }
+
+    /* Infobar Text */
+    p.title.ng-star-inserted,
+    span[class="ng-star-inserted"] {
+        color: var(--grey-secondary)!important;
+    }
+
+    /* Text in quiz performance circle */
+    g g text tspan {
+        fill: var(--grey-secondary);
+    }
+    /* Main Page Categories Rows */
+    .quiz-list-data-item {
+
+        background-color: var(--bg-color)!important;
+        color: var(--grey-secondary);
+        border: 2px solid var(--bg-black)!important;
+    }
+    div[class="ps-content"] div[class="dashboard-quizcats-data-item ng-star-inserted"],
+    .dashboard-quizinfo-body[_ngcontent-serverApp-c214] .dashboard-quickinfo-item.has-flash-info[_ngcontent-serverApp-c214],
+    div[class="swiper-wrapper"] div div[class="holder"] {
+        background-color: var(--bg-color);
+        color: var(--grey-secondary);
+        border: 2px solid var(--bg-black)!important;
+    }
+
+    div[class="quiz-card-icon mr-3"] {
+        background-color: var(--bg-color)!important;
+    }
+    /* Data text override */
+    div[class="data"] {
+        color: var(--grey-secondary) !important;
+    }
+    /* pods tag text */
+    ul li[class="cat-tags-item"] {
+        background-color: var(--bg-darker)!important;
+        color: var(--grey-secondary);
+        border: 2px solid var(--bg-black)!important;
+    }
+
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* -------------Videos------------------ */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    .app-main-wrapper {
+        background-color: var(--bg-color);
+    }
+    /* Header */
+    div[id="all-categories"] div div h2 {
+        color: var(--grey-secondary);
+    }
+    /* video panel tabs */
+    div[class="panel-tabs"],
+    div[class="mat-tab-label-content"],
+    .bb-panel {
+        background-color: var(--bg-darker);
+        color: var(--grey-secondary)!important;
+    }
+
+    div[id="all-categories"] div .mat-accordion .mat-expansion-panel {
+        background-color: var(--bg-darker)!important;
+        border: 2px solid var(--bg-black)!important;
+    }
+    /* row text */
+    .cat-ext-rows .mat-accordion .mat-expansion-panel-header-title {
+        color: var(--grey-secondary)!important;
+    }
+    .title {
+        color: var(--nav-text)!important;
+    }
+    .analytics-col .cat-thumb {
+        background: var(--bg-color)!important;
+    }
+    /* searchbox */
+    .note-list-modal-body-form .input-group > .col.input-group-input .mat-form-field,
+    .input-default.mat-form-field-appearance-outline.bg-white .mat-form-field-wrapper,
+    .app-breadcrumb .col-actions .enter-tags .input-default,
+    .mat-input-element::placeholder {
+        background: var(--bg-darker)!important;
+        color: var(--grey-secondary)!important;
+    }
+    /* Button bg*/
+    .video-row .btn-holder .counter,
+    .analytics-col .cat-btn-holder .btn-wrap .counter {
+        background: var(--bg-darker)!important;
+        border: 2px solid var(--bg-color)!important;
+    }
+    /* playlist video */
+    .playlist-wrap .playlist-details .mat-expansion-panel {
+        border-bottom: 1px solid var(--bg-color);
+    }
+    .selectedVideo {
+        background-color: var(--bg-color)!important;
+    }
+    .playlist-wrap .track-details .track-row:hover {
+        background: var(--bg-lighter-hover);
+    }
+    .playlist-wrap .track-details .track-row .track-name {
+        color: var(--grey-secondary)!important;
+    }
+    /* bottom notes */
+    .note-list-modal-body-form {
+        background-color: var(--bg-color);
+    }
+}
