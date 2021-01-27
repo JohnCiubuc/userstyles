@@ -70,8 +70,6 @@ Adds a 'Reveal Answer' button when reviewing previous tests
 
 
 ![a1](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss1.png)
-![a2](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss2.jpg)
-![a3](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/images/amboss4.jpg)
 
 #### <a name="dcanopy"></a> Darker Canopy (Still WIP -- Compatibility may be an issue) [![](https://img.shields.io/badge/install%20with-stylus-006666?style=flat-square)](https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-canopy.user.css)
 

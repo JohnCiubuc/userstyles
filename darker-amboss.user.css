@@ -2,7 +2,7 @@
 @name         Darker Amboss
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-amboss.user.css
-@version      1.0.9
+@version      1.1.0
 @license      Apache-1.1
 @description  Adds a dark theme to Amboss
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
@@ -14,7 +14,8 @@
 }
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://next.amboss.com/us/questions"), url-prefix("https://next.amboss.com/us/search/") {
+@-moz-document url-prefix("https://next.amboss.com/us/questions"),
+url-prefix("https://next.amboss.com/us/search/") {
 
     :root {
         --bg-color: hsl(200, 18%, 14%);
@@ -30,116 +31,167 @@
         --table-out: hsla(209, 23%, 19%, .929);
         --table-in: hsla(209, 26%, 23%, .929);
         --nav-text: hsl(174, 48%, 50%);
-        
-        
-        --amboss-green:#0DBF8F;
-        --amboss-yellow:#F1D56B;
-        --amboss-red:#EE6160;
+
+
+        --amboss-yellow: #F1D56B;
+        --amboss-red: #EE6160;
+
+        --amboss-bg-one: #282C34;
+        --amboss-bg-two: #1E2125;
+        --amboss-bg-three: #24282D;
+        --amboss-white: #CED1D6;
+        --amboss-blue: #6E95CF;
+        --amboss-green: #41A48A;
     }
     html {
         scrollbar-width: auto;
         scrollbar-color: #123f55 #222;
     }
-
-    /* Search Bar */
-    [data-e2e-test-id="search-input"]{
-        background:var(--bg-darker);
+/* QUIZ */
+    /*Header*/
+    [data-e2e-test-id="sessionSidebar"] div[class^="header"] {
+        background-color: var(--amboss-bg-two);
     }
-    input[class^="react-autosuggest__input"]{        
-        color:--color;
+    /*footer*/
+    [data-e2e-test-id="sessionSidebar"] div[class^="footer"] {
+        background-color: var(--amboss-bg-two);
+    }
+    div[class^="upper"] {
+        background-color: unset;
+    }
+    [class^="toolbarSection"] {
+        border-left: unset!important;
+        border-right: unset!important;
+    }
+    [data-e2e-test-id="answer-theme-error"] {
+
+        background-color: var(--amboss-bg-two);
+        color: --color;
+        border-style: unset;
+    }
+    div[class^="shadow"] {
+        background-color: var(--answer-highlight-select);
+    }
+    [data-e2e-test-id="answer-theme-undefined"],
+    [data-e2e-test-id="answer-theme-error"],
+    [data-e2e-test-id="answerExplanation"] {
+        background-color: var(--amboss-bg-three);
+        color: --color!important;
+        border-style: unset;
+    }
+
+    [data-e2e-test-id="answer-theme-successInverted"] {
+        background-color: var(--amboss-bg-two);
+        color: --color;
+        border-style: unset;
+    }
+    [data-e2e-test-id="hint"] {
+        background-color: unset;
+    }
+    div[class^="answerText"]:hover {
+        background-color: var(--amboss-bg-two);
+    }
+    /* END QUIZ */
+    /* Search Bar */
+    [data-e2e-test-id="search-input"] {
+        background: var(--amboss-bg-one);
+    }
+    input[class^="react-autosuggest__input"] {
+        color: --color;
     }
     /* Question Prompt */
     [data-e2e-test-id="questionSessionMainSpace"] div div div[class^="body"],
-    [data-e2e-test-id="questionSessionMainSpace"] div div[class^="flush"]{
-        background-color:var(--bg-darker);
-            border-top-right-radius: 8px;
+    [data-e2e-test-id="questionSessionMainSpace"] div div[class^="flush"] {
+        background-color: var(--amboss-bg-one);
+        border-top-right-radius: 8px;
         border-top-left-radius: 8px;
     }
     article[class^="questionConten"],
-    article[class^="hint"]{
-        background-color:var(--bg-darker);
+    article[class^="hint"] {
+        background-color: var(--amboss-bg-one);
     }
-    [data-e2e-test-id="answer-theme-errorInverted"]        {
-            color:#000!important;
-        }
-        /* Answer Circles */
+    [data-e2e-test-id="answer-theme-errorInverted"] {
+        color: #000!important;
+    }
+    /* Answer Circles */
     div[class^="answerText"] div[class^="letterAndText"] div[class^="container"] {
-            background-color:var(--bg-darker)!important;
-            border-color:var(--bg-darker)!important;
-        }
-        /* Skip Button */
+        background-color: var(--amboss-bg-two)!important;
+        border-color: var(--amboss-bg-one)!important;
+    }
+    /* Skip Button */
     [data-e2e-test-id="next-button"] {
-            background-color:var(--table-out);
-        }
+        background-color: var(--amboss-bg-one);
+    }
     span[class^="userHighlight"],
-    span[class^="userHighlightIsActive"]{
-        color:var(--bg-darker-tertiary);
-        background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 3%,#e6db5c 0,#b3ab43 80%,#b3ab43 0,#b3ab43 96%,#b3ab43 0,#b3ab43);
+    span[class^="userHighlightIsActive"] {
+        color: var(--bg-darker-tertiary);
+        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0) 3%, #e6db5c 0, #b3ab43 80%, #b3ab43 0, #b3ab43 96%, #b3ab43 0, #b3ab43)!important;
     }
     /* Questions ;previous button */
     div[class^="buttonCon"] div [data-e2e-test-id="prev-button"],
-    [data-e2e-test-id="question-context-sidebar-analysis-btn"]{
-        background-color:var(--bg-darker);
-        color:var(--grey-text);
+    [data-e2e-test-id="question-context-sidebar-analysis-btn"] {
+        background-color: var(--amboss-bg-three);
+        color: var(--grey-text);
     }
     /* Labs Container */
-    div[class^="labValuesWrapper"]{
-            background-color:var(--bg-darker);
+    div[class^="labValuesWrapper"],
+    div[class^="flushTop"] {
+        background-color: var(--amboss-bg-one);
     }
     /* Create question session */
     div[id="MODAL-TARGET-ID"] div div[class^="modal"],
     div[id="MODAL-TARGET-ID"] div div[class^="modal"] div[class^="conta"],
     div[id="MODAL-TARGET-ID"] div div[class^="modal"] div[class^="conta"] div div div div span {
-        background-color:var(--bg-darker);
-        color:var(--grey-text);
+        background-color: var(--bg-darker);
+        color: var(--grey-text);
     }
     /* Button Hover, main pages */
     div[class^="buttonContainer"] div[class^="contentWithC"] div button:hover,
     div[class^="container"] div[class^="buttonWra"] button:hover,
-    div[class^="widget"] div[class^="contentWithC"] div button:hover{
-        box-shadow:#3c7e49 0px 8px 16px 0px;
+    div[class^="widget"] div[class^="contentWithC"] div button:hover {
+        box-shadow: #3c7e49 0px 8px 16px 0px;
     }
 
     /* Grey text on main pages */
     div[class^="buttonContainer"] div[class^="contentWithC"] div[class^="textContain"] span[class^="base"],
     div[class^="widget"] div[class^="contentWithC"] div[class^="textContain"] span[class^="base"],
-    div[class^="widget"] div[class^="widget"] h3[class^="widget"]{
-            color:var(--grey-text);
+    div[class^="widget"] div[class^="widget"] h3[class^="widget"] {
+        color: var(--grey-text);
     }
 
     /* Main Page .. Continue */
-    div[class^="fullHeight"] div[class^="upperPart"] h1[class^="title"]{
-            color:var(--grey-text)!important;
-        }
+    div[class^="fullHeight"] div[class^="upperPart"] h1[class^="title"] {
+        color: var(--grey-text)!important;
+    }
     /* Article */
     [data-e2e-test-id="section-with-header"] div[class^="headerContainer"] {
-        background-color:unset;
+        background-color: unset;
         border-bottom: 1px solid #214e6d;
     }
     /* Learning Card Title */
-    [data-e2e-test-id="learningCardContent"] div[class^="header-886899471"]{
-        border-bottom:1px solid var(--bg-darker);
+    [data-e2e-test-id="learningCardContent"] div[class^="header-886899471"] {
+        border-bottom: 1px solid var(--bg-darker);
     }
     /* Article Toolbars */
-    div[class^="articleToolbarWrapper"] section[class^="toolbar"], 
-    div[class^="viewOptionsDropdown"]{
+    div[class^="articleToolbarWrapper"] section[class^="toolbar"],
+    div[class^="viewOptionsDropdown"] {
         border-bottom: unset;
         border-top: unset;
         border-left: unset;
         border-right: unset;
-        background-color:var(--bg-color);
+        background-color: var(--bg-color);
     }
-    div[class^="togglesWrapper"]{
-        border-right:2px solid var(--bg-darker);
+    div[class^="togglesWrapper"] {
+        border-right: 2px solid var(--bg-darker);
     }
-    [data-e2e-test-id="show-hide-sections-button"]{
+    [data-e2e-test-id="show-hide-sections-button"] {
         border-bottom: unset;
         border-left: unset;
     }
-    div[class^="sizeButtonContainer-330741294--disableSizeButtonPointerEventOnTutorial-4201386556"]{
-        border-left:unset;
+    div[class^="sizeButtonContainer-330741294--disableSizeButtonPointerEventOnTutorial-4201386556"] {
+        border-left: unset;
     }
-    
+
     div[class^="viewOptionsToggles"] {
         background-color: var(--acb);
         color: --color;
@@ -160,51 +212,7 @@
     button svg g path {
         fill: #99A7B3;
     }
-    /* QUIZ */
-    /*Header*/
-    [data-e2e-test-id="sessionSidebar"] div[class^="header"] {
-        background-color: var(--bg-color);
-    }
-    /*footer*/
-    [data-e2e-test-id="sessionSidebar"] div[class^="footer"] {
-        background-color: var(--bg-color);
-    }
-    div[class^="upper"] {
-        background-color: unset;
-    }
-    [class^="toolbarSection"] {
-        border-left: unset!important;
-        border-right: unset!important;
-    }
-    [data-e2e-test-id="answer-theme-error"] {
-
-        background-color: var(--answer-background);
-        color: --color;
-        border-style: unset;
-    }
-    div[class^="shadow"] {
-        background-color: var(--answer-highlight-select);
-    }
-    [data-e2e-test-id="answer-theme-undefined"],
-    [data-e2e-test-id="answer-theme-error"],
-    [data-e2e-test-id="answerExplanation"] {
-        background-color: var(--answer-background);
-        color: --color!important;
-        border-style: unset;
-    }
-
-    [data-e2e-test-id="answer-theme-successInverted"] {
-        background-color: var(--table-in);
-        color: --color;
-        border-style: unset;
-    }
-    [data-e2e-test-id="hint"] {
-        background-color: unset;
-    }
-    div[class^="answerText"]:hover {
-        background-color: var(--answer-highlight-select);
-    }
-    /* END QUIZ */
+    
     /* BEGIN POST QUIZ */
     div[class^="cardContainer"],
     div[class^="cardHeaderContainer"],
@@ -284,12 +292,12 @@
     table th {
 
         color: #f0e4cd!important;
-        background-color: var(--table-out) !important;
+        background-color: var(--amboss-bg-two) !important;
     }
 
     table td {
         color: #f0e4cd!important;
-        background-color: var(--table-in)!important;
+        background-color: var(--amboss-bg-one)!important;
     }
     /* Bottom References*/
     #references a span {
@@ -342,12 +350,12 @@
     }
 
     div[class^="topNavCon"] {
-        background-color: var(--bg-color);
+        background-color: var(--amboss-bg-two);
         color: --color;
         border-color: rgb(68, 74, 73);
     }
     div[class^="contextNavC"] {
-        background-color: var(--bg-color);
+        background-color: var(--amboss-bg-two);
         color: --color;
     }
     [id="High-Yield"],
