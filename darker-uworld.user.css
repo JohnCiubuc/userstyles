@@ -2,14 +2,14 @@
 @name         Darker UWorld
 @namespace    https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
 @homepageURL  https://raw.githubusercontent.com/JohnCiubuc/userstyles/master/darker-uworld.user.css
-@version      1.0.6
+@version      1.0.9
 @license      Apache-1.1
 @description  Adds a dark theme to UWorld
 @author       JohnCiubuc (https://openusercss.org/profile/5ecec9e4fbfa2b0c00b8b872)
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.uworld.com/ClientApp"),
-url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
+@-moz-document url-prefix("https://www.uworld.com/ClientApp"), url-prefix("https://www.uworld.com/courseapp"),
+url-prefix("https://www.uworld.com/courseapp/usmle/performance"), url-prefix("https://www.uworld.com/memberarea.aspx") {
 
     :root {
         --uw-dark: #273542;
@@ -21,9 +21,37 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
         --light-grey: hsl(217, 29%, 96%);
         --color: #FFEAC1;
         --h-color: #fff2a8;
+        
+         --amboss-yellow: #F1D56B;
+        --amboss-red: #EE6160;
+
+        --amboss-bg-one: #282C34;
+        --amboss-bg-two: #1E2125;
+        --amboss-bg-three: #24282D;
+        --amboss-white: #CED1D6;
+        --amboss-blue: #6E95CF;
+        --amboss-green: #41A48A;
+    }
+    /* Member's Area */
+
+div[id="Body_ExamScoresBanner"]{    
+        background-color: var(--uw-dark);
+}
+.fa-caret-down-productmenu{    
+        color: var(--amboss-white)!important;
+}
+.navbar-inner.small-nav,
+div[class="navbar-inner d-flex justify-content-between"],
+div[class="row mr--0 row-grey row-productmenu hidden-xs"]{
+    
+        background-color: var(--amboss-bg-two);
+}
+div[class="row mr--0"] {
+        
+        background-color: var(--amboss-bg-one);
     }
     /* Performance Page */
-    mat-toolbar-row[class="mat-toolbar-row d-flex justify-content-between w-100 default-bar"],
+    mat-toolbar-row,
     span[class="header-text header-font ng-star-inserted"] {
         background-color: var(--uw-dark)!important;
         color: var(--grey)!important;
@@ -32,6 +60,10 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
     .mat-toolbar {
         background-color: var(--uw-dark)!important;
     }
+    div[class="flex-left-side"]{
+        color:var(--amboss-white);
+    }
+    .welcome-first-tabs .mat-tab-body-wrapper,
     .overall-first-tabs .mat-tab-body-wrapper,
     .report-first-tabs .report-second-tabs {
         background-color: var(--uw-med);
@@ -48,6 +80,10 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
 
         background-color: var(--uw-dark);
         border: 1px solid var(--uw-med);
+    }
+    /* Hide tutorial button. Also prevents massive whitespace bar from appearing */
+    button[title="How to use"]{
+        display:none;
     }
     /* Lab Panel*/
     .daymode .labs,
@@ -88,6 +124,12 @@ url-prefix("https://www.uworld.com/courseapp/usmle/performance") {
     .report-first-tabs .report-second-tabs .filter-div .mat-select-value {
         color: var(--grey);
     }
+    /* hide bar*/
+div[class="pace pace-active"]{
+    visibility: hidden;
+    display: none;
+}
+
     /* Report tables*/
     .mat-table thead {
         background-color: var(--uw-lite);
